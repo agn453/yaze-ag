@@ -42,7 +42,7 @@ Sections:
 	 2. <a href="#linux">LINUX</a>
 	 3. <a href="#freebsd">FreeBSD</a>
 	 4. <a href="#cygwin">Cygwin</a> (Windows)
-	 5. <a href="#macosx">Mac-OS-X</a> (not yet ready)
+	 5. <a href="#macos">MacOS</a>
 	 6. <a href="#raspi1">Raspberry Pi 1 .......... (ARMv6, 32Bit)</a>
 	 7. <a href="#raspi2">Raspberry Pi 2 Model B .. (ARMv7, 32Bit)</a>
 	 8. <a href="#raspi3-32">Raspberry Pi 3 Model B/B+ (ARMv7, 32Bit)</a>
@@ -134,15 +134,16 @@ Sections:
 	To install the files in /usr/local/bin and /usr/local/lib/yaze
 	give the command "make install".
 
-<a name="macosx">&nbsp;</a>
-5. If you want to run yaze-ag on <b>Mac-OS-X</b> then
-   (gcc ?.?.?)
+<a name="macos">&nbsp;</a>
+5. If you want to run yaze-ag on <b>MacOS</b> then you need a build tool chain, like the Command Line tools for XCode
+(available from <a href="https://developer.apple.com/download/all/?q=command%20line%20tools%20for%20xcode"
+>https://developer.apple.com/download/all/?q=command%20line%20tools%20for%20xcode</a> - updates automatically on modern systems)
 
-	You have to use the Makefile_solaris
+	When installed, run
 
-	Refer to section "SOLARIS".
+            make -f Makefile_freebsd
 
-	Which switches are to set, that I don't know at this time.
+        and run with "./yaze".  This port is not tested very much. Please report problems.
 
 <a name="raspi1">&nbsp;</a>
 6. If you want to run yaze-ag on a <b>Raspberry Pi 1</b> then

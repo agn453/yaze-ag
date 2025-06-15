@@ -12,3 +12,4 @@ unixlike.ydsk
 zinc.ydsk
 testdsk.ydsk
 zsm4-source.ydsk
+USER.ydsk
